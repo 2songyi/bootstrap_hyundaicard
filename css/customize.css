@@ -3,8 +3,22 @@
   font-family: 'YouandiModernTR';
   src: url('../font/YouandiModernTR.woff') format('woff');
 }
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+/* @font-face {
+    font-family: 'KoPubDotumMedium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @import "//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css"; */
+/* @import url('https://webfontworld.github.io/kopus/KoPubWorldDotum.css'); */
 
+/* * { font-family: 'KoPubWorldDotum'; } */
 a { text-decoration: none; }
+ul, li { list-style: none; padding: 0; margin: 0;}
+.container {
+  border:none;
+}
 
 /* header */
 header .navbar{
@@ -18,12 +32,121 @@ header .navbar{
   width: 100px;
   height: 158px;
 }
-
+.container.card {
+  padding-top: 65px;
+}
 .container.card .left-title {
   font-family: "YouandiModernTR", serif;
   font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
 }
 
+.col .card {
+  text-align: center;
+  border: none;
+}
+
+.col .card img {
+  margin: 0 auto;
+}
+
+.col .card .card-body .card-title {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+/* champion brands area */
+/* title */
+.campion {
+  margin-top: 50px;
+}
+.campion .title-txt {
+  text-align: center;
+}
+
+.campion .title-txt h1 {
+  font-family: "YouandiModernTR", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.campion .title-txt p {
+font-size: 20px;
+}
+/* content */
+.campion .row.content {
+  margin-top: 30px;
+}
+
+.campion .content .img-box {
+  position: relative;
+  /* height: 500px; */
+  overflow: hidden;
+}
+
+.campion .content .img-box img {
+  position: absolute;
+}
+
+img.campion-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.campion .content .jumbotron {
+  padding-left: 20px;
+}
+.campion .content .jumbotron h1 {
+  font-family: "YouandiModernTR", serif;
+  font-weight: 600;
+  font-size: 55px;
+}
+.campion .content .jumbotron p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* btn */
+.campion .content a.btn {
+  height: 56px;
+  padding: 17px 4px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 8px;
+  color: #fff;
+  background: #000;
+}
+
+.membership-fee {
+  position: relative;
+  width: 344px;
+  margin-top: 56px;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+}
+
+
+.membership-fee p.fee {
+  background: url('../img/champion/ico_arrowB_forward.png') no-repeat 100% 50%;
+  background-size: 24px 24px;
+}
+.membership-fee ul {
+  margin-top: 12px;
+  padding-right: 4px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.membership-fee ul li {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* event area */
 .evt-1 {
