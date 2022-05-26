@@ -1,30 +1,43 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: 'YouandiModernTR';
   src: url('../font/YouandiModernTR.woff') format('woff');
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
-/* @font-face {
-    font-family: 'KoPubDotumMedium';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-/* @import "//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css"; */
-/* @import url('https://webfontworld.github.io/kopus/KoPubWorldDotum.css'); */
 
-/* * { font-family: 'KoPubWorldDotum'; } */
-a { text-decoration: none; }
-ul, li { list-style: none; padding: 0; margin: 0;}
+* {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  border:none;
+  /* border: none; */
+}
+
+.col {
+  padding: 0;
+}
 }
 
 /* header */
-header .navbar{
+header .navbar {
   height: 80px;
   font-family: "YouandiModernTR", serif;
   z-index: 300;
+}
+
+header .navbar .collapse .navbar-nav .nav-item a {
+  font-family: "YouandiModernTR", serif;
+  font-weight: bold;
 }
 
 /* card area */
@@ -32,9 +45,12 @@ header .navbar{
   width: 100px;
   height: 158px;
 }
+
 .container.card {
   padding-top: 65px;
+  border: none;
 }
+
 .container.card .left-title {
   font-family: "YouandiModernTR", serif;
   font-weight: 700;
@@ -53,7 +69,7 @@ header .navbar{
 
 .col .card .card-body .card-title {
   margin-top: 12px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: #000;
@@ -62,8 +78,9 @@ header .navbar{
 /* champion brands area */
 /* title */
 .campion {
-  margin-top: 50px;
+  margin-top: 150px;
 }
+
 .campion .title-txt {
   text-align: center;
 }
@@ -76,17 +93,31 @@ header .navbar{
 }
 
 .campion .title-txt p {
-font-size: 20px;
+  font-size: 20px;
 }
+
 /* content */
+/* .campion .row {
+} */
 .campion .row.content {
+  /* position: relative; */
   margin-top: 30px;
+  height: 500px;
 }
 
 .campion .content .img-box {
-  position: relative;
-  /* height: 500px; */
+  height: 500px;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.campion .content .img-box1 {
+  background-image: url('../img/champion/bg_top_sbhc.png');
+}
+
+.campion .content .img-box2 {
+  background-image: url('../img/champion/bg_top_msshc.png');
 }
 
 .campion .content .img-box img {
@@ -101,21 +132,28 @@ img.campion-logo {
 .campion .content .jumbotron {
   padding-left: 20px;
 }
+
 .campion .content .jumbotron h1 {
   font-family: "YouandiModernTR", serif;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 45px;
 }
+
 .campion .content .jumbotron p {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 26px;
+}
+
+.campion .content .jumbotron p.lead {
+  margin-top: 24px;
 }
 
 /* btn */
 .campion .content a.btn {
   height: 56px;
-  padding: 17px 4px;
+  padding: 17px 26px;
+  margin-top: 14px;
   font-size: 16px;
   line-height: 22px;
   border-radius: 8px;
@@ -126,44 +164,77 @@ img.campion-logo {
 .membership-fee {
   position: relative;
   width: 344px;
-  margin-top: 56px;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 24px;
   border: 1px solid #ddd;
 }
 
-
 .membership-fee p.fee {
   background: url('../img/champion/ico_arrowB_forward.png') no-repeat 100% 50%;
   background-size: 24px 24px;
 }
+
 .membership-fee ul {
   margin-top: 12px;
   padding-right: 4px;
   font-weight: 700;
   font-size: 16px;
 }
+
 .membership-fee ul li {
   display: flex;
   justify-content: space-between;
 }
 
 /* event area */
+.event-banner {
+  margin-top: 150px;
+}
+
+.event-banner .row+.row {
+  margin-top: 20px;
+}
+
+.event-banner .row .title-txt h1 {
+  text-align: center;
+  font-family: "YouandiModernTR", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.event-banner .col {
+  padding: 8px;
+}
+
+.event-banner .col h2 {
+  font-family: "YouandiModernTR", serif;
+}
+
+.event-banner .col p {
+  color: #5c5c5c;
+  font-weight: 500;
+}
+
 .evt-1 {
   background: url('../img/event/evnt_vp_costco_1644467687120.png');
   background-position: right;
   background-size: cover;
 }
+
 .evt-2 {
   background: url('../img/event/576095_PCImg_C_1584_1644806891376.png');
   background-position: right;
   background-size: cover;
 }
+
 .evt-3 {
   background: url('../img/event/evnt_vp_rent_1644483522615_1646022506312_1646038178327.png');
   background-position: right;
   background-size: cover;
 }
+
 .evt-4 {
   background: url('../img/event/evnt_vp_casper_1644467607938.png');
   background-position: right;
@@ -174,4 +245,10 @@ img.campion-logo {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+}
+
+/* footer area */
+footer {
+  margin-top: 50px;
+  border-top: 1px solid #f1f1f1;
 }

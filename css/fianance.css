@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'YouandiModernTR';
+  src: url('../font/YouandiModernTR.woff') format('woff');
+}
+
+.container .pricing-header h1 {
+  font-family: 'YouandiModernTR',serif;
+  font-size: 34px;
+}
+
+.container .col {
+  min-height: 300px;
+  padding: 25px;
+}
+.container .col .card {
+  background: #d3eff2;
+}
+
+.container .col .card .card-header h4 {
+  font-family: 'YouandiModernTR',serif;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.container .col .card .card-body  {
+  height: 100%;
+}
+
+.container .col .card .card-body .card-title {
+  font-size: 23px;
+}
+
+.container .col .card .card-body button {
+  background: #00a3b8;
+  color: #fff;
+}
