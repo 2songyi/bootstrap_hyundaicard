@@ -40,6 +40,11 @@ header .navbar .collapse .navbar-nav .nav-item a {
   font-weight: bold;
 }
 
+/*mainbanner area*/
+.carousel.slide .carousel-inner .carousel-item img {
+  object-fit: contain;
+}
+
 /* card area */
 .card-img-top {
   width: 100px;

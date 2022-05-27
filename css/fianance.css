@@ -4,9 +4,13 @@
   src: url('../font/YouandiModernTR.woff') format('woff');
 }
 
+.container .pricing-header {
+  margin-top: 100px;
+}
 .container .pricing-header h1 {
   font-family: 'YouandiModernTR',serif;
   font-size: 34px;
+  font-weight: bold;
 }
 
 .container .col {
@@ -35,4 +39,39 @@
 .container .col .card .card-body button {
   background: #00a3b8;
   color: #fff;
+}
+
+.row.desc .col {
+  border-right: 1px solid #f1f1f1;
+}
+.row.desc .col:last-child {
+  border: none;
+}
+.row.desc .col ul li {
+  height: 174px;
+  margin-top: 64px;
+}
+.row.desc .col ul li:first-child {
+  margin-top: 0;
+}
+
+.row.desc .col li p.top-txt {
+  font-size: 16px;
+  color: #858585;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.row.desc .col li h4 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.row.desc .col li h4 + p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 8px;
 }
